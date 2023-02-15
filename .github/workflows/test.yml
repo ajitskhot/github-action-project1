@@ -1,0 +1,19 @@
+name: second workflow 
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Greet the user
+        run: echo welcome to Github Actions
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Get runner host IP address
+        run: ifconfig     
