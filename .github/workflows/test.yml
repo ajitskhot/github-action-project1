@@ -21,5 +21,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Get runner host IP address
+      - name: Get runner user name
         run: whoami           
