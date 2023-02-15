@@ -9,11 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Greet the user
-        run: echo welcome to Github Actions
+      - name: Runner server name
+        run: hostname
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Get runner host IP address
-        run: ifconfig     
+        run: ifconfig   
+        
