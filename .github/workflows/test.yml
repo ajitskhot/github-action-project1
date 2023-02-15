@@ -17,4 +17,9 @@ jobs:
       - uses: actions/checkout@v3
       - name: Get runner host IP address
         run: ifconfig   
-        
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Get runner host IP address
+        run: whoami           
